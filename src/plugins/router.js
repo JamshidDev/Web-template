@@ -18,6 +18,14 @@ const routes = [
     },
    
   },
+  {
+    path: "/layout-v1",
+    name: "layout-v1",
+    component: function () {
+      return import("../views/Layout_v1/Laout_v1.vue");
+    },
+   
+  },
 
 ];
 
