@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-content-center align-items-center w-full bg-primary p-8"
+    class="flex justify-content-center align-items-center w-full bg-primary p-0"
   >
     <div class="navbar_container">
       <div class="navbar" v-for="nav_Items in navbar_Items" :key="nav_Items.to">
@@ -246,6 +246,30 @@ export default {
             {
               label: "Adminlar",
               to: "3-5",
+              icon: "pi pi-shield",
+              visibl: true,
+            },
+            {
+              label: "Xonalaar",
+              to: "3-6",
+              icon: "pi pi-shield",
+              visibl: true,
+            },
+            {
+              label: "Raxbarlar",
+              to: "3-7",
+              icon: "pi pi-shield",
+              visibl: true,
+            },
+            {
+              label: "Analitika",
+              to: "3-8",
+              icon: "pi pi-shield",
+              visibl: true,
+            },
+            {
+              label: "Diagrammalar",
+              to: "3-9",
               icon: "pi pi-shield",
               visibl: true,
             },

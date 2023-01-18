@@ -14,7 +14,7 @@ const routes = [
     path: "/navbar-v1",
     name: "navbar-v1",
     component: function () {
-      return import("../views/Navbar_v1/Navbar_v1.vue");
+      return import("../views/Navbar_v1/NavbarVersion.vue");
     },
    
   },
