@@ -15,7 +15,7 @@
         <span>{{ SCREEN_WIDTH }}</span>
       </div>
       <div class="main_section_main">
-        <p>Main section</p>
+        <router-view></router-view>
       </div>
 
 
@@ -128,7 +128,7 @@ $sidebar_animation: all 225ms cubic-bezier(0, 0, 0.2, 1);
     }
 
     &> .main_section_main{
-        padding: 50px;
+        padding: 10px;
     }
   }
 

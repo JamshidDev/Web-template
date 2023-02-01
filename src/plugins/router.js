@@ -24,6 +24,16 @@ const routes = [
     component: function () {
       return import("../views/Layout_v1/Laout_v1.vue");
     },
+    children:[
+      {
+        path: "/transition",
+        name: "transition",
+        component: function () {
+          return import("../views/Transition/Transition.vue");
+        },
+       
+      },
+    ]
    
   },
 
