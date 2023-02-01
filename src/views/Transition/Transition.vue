@@ -24,6 +24,18 @@
                
             </div>
         </div>
+        <div class="col-12 flex justify-content-center align-items-center p-8">
+            <div class="card_container">
+                <div class="card">
+                    <div class="front_content">
+                        <span>Front of card</span>
+                    </div>
+                    <div class="back_content">
+                        <span>Back of card</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -105,6 +117,53 @@ export default {
         100%{
             opacity: 1;
             transform: translateY(0px);
+        }
+    }
+}
+
+
+.card_container{
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    perspective: 800px;
+    &:hover .card{
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+    &> .card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1500ms;
+        transform-style: preserve-3d;
+
+      
+
+        &> .front_content, .back_content{
+            width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        position: absolute;
+        backface-visibility: hidden;
+        color: rgb(225, 12, 12);
+        font-size: 24px;
+        font-weight: 700;
+        }
+
+        &> .front_content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://source.unsplash.com/random/600x400");
+        }
+
+        &> .back_content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(102, 51, 153, 0.718);
+            transform: rotateY(180deg);
         }
     }
 }
