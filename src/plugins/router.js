@@ -36,6 +36,22 @@ const routes = [
     ]
    
   },
+  {
+    path: "/login-v1",
+    name: "login-v1",
+    component: function () {
+      return import("../views/Login pages/LoginSimple.vue");
+    },
+   
+  },
+  {
+    path: "/locked-v1",
+    name: "locked-v1",
+    component: function () {
+      return import("../views/Locked pages/AccountLocked.vue");
+    },
+   
+  },
 
 ];
 
