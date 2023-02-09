@@ -45,6 +45,14 @@ const routes = [
    
   },
   {
+    path: "/login-v2",
+    name: "login-v2",
+    component: function () {
+      return import("../views/Login pages/LoginCover.vue");
+    },
+   
+  },
+  {
     path: "/locked-v1",
     name: "locked-v1",
     component: function () {
