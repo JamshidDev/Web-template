@@ -19,6 +19,14 @@ const routes = [
    
   },
   {
+    path: "/navbar-v2",
+    name: "navbar-v2",
+    component: function () {
+      return import("../views/Navbar_v2/Navbar_Multiple.vue");
+    },
+   
+  },
+  {
     path: "/layout-v1",
     name: "layout-v1",
     component: function () {
