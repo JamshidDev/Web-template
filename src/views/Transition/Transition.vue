@@ -1,6 +1,16 @@
 <template>
     <div class="grid">
         <div class="col-12">
+            <div class="jr-breadcump">
+              
+                <div class="jr-breadcump-title">
+                    Xodimlar bo'limi
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="col-12">
             <h2>Transition page</h2>
             <button @click="show = !show">Toggle</button>
             <Transition>
@@ -15,27 +25,7 @@
                 </Transition>
             </div>
         </div>
-        <div class="col-12">
-            <div class="jr-breadcump">
-              
-                <div class="jr-breadcump-title">
-                    Transition page title
-                </div>
-               
-            </div>
-        </div>
-        <div class="col-12 flex justify-content-center align-items-center p-8">
-            <div class="card_container">
-                <div class="card">
-                    <div class="front_content">
-                        <span>Front of card</span>
-                    </div>
-                    <div class="back_content">
-                        <span>Back of card</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
     </div>
 </template>
 
@@ -96,11 +86,13 @@ export default {
     display: block;
     min-height: 40px;
     max-height: 40px;
-    padding: 5px;
+    padding:5px;
+    margin-top: 20px;
+    overflow:hidden ;
     .jr-breadcump-title{
-        color: rgb(1, 32, 53);
+        color: #111827;
         font-size: 26px;
-        font-weight: 700;
+        font-weight: 600;
         animation: transform-text 0.3s ease 0s 1 forwards;
 
     }
